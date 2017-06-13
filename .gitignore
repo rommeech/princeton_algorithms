@@ -1,3 +1,16 @@
+# Executable files
+examples/quick_find_demo01
+examples/quick_union_demo01
+examples/quick_union_w_demo01
+examples/quick_union_wpc_demo01
+percolation/percolation_wpc
+percolation/percolation_wpc
+percolation/percolation_wpc_stats
+percolation/visualizer/percolation_visualizer
+
+# Visual Studio Code files
+.vscode/
+
 # Prerequisites
 *.d
 
@@ -50,3 +63,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
