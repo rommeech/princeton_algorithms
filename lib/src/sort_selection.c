@@ -16,7 +16,6 @@ void selection_sort_desc(void **base, size_t n)
 void selection_sort(void **base, size_t n, int (*comp)(void *, void *))
 {
     size_t i, j, k;
-    void *tmp;
     for(i = 0; i < n-1; i++) {
         k = i;
         for (j = i+1; j < n; j++) {
