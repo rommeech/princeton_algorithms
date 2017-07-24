@@ -10,6 +10,7 @@ void print_str_array(char **s, size_t n, size_t col_width, size_t col_num)
         for (j = 0; j < col_num; j++) {
             k = i + j * col_height;
             if (k < n) {
+                printf("%3lu. ", k);
                 printf("%-*s", (int)col_width, s[k]);
             }
         }

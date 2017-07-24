@@ -1,4 +1,6 @@
 # Executable files
+bin/
+bin/test/
 examples/quick_find_demo01
 examples/quick_union_demo01
 examples/quick_union_w_demo01
