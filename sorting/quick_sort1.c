@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../lib/rp_io.h"
-#include "../lib/sort_merge1.h"
+#include "../lib/sort_quick1.h"
 
 /*
-gcc lib/src/rp_io.c lib/src/rp_libstr.c lib/src/sort_utils.c lib/src/sort_merge1.c sorting/merge_sort1.c -o bin/test/merge_sort
-./bin/test/merge_sort01 < bin/test/pokemons10.txt
+gcc lib/src/rp_io.c lib/src/rp_libstr.c lib/src/sort_utils.c \
+    lib/src/sort_quick1.c sorting/quick_sort1.c lib/src/shuffle.c \
+    -o bin/test/quick_sort
+./bin/test/quick_sort < bin/test/pokemons10.txt
 */
 
 int main()
@@ -19,8 +21,8 @@ int main()
     printf("[Before sorting]\n");
     print_str_array(data, n, col_width, col_num);
 
-    //merge_sort1_asc((void **)data, n);
-    merge_sort1_desc((void **)data, n);
+    //quick_sort1_asc((void **)data, n);
+    quick_sort1_desc((void **)data, n);
 
     printf("[After sorting]\n");
     print_str_array(data, n, col_width, col_num);

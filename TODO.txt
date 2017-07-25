@@ -1,0 +1,6 @@
+1. Merge sort: improvments
+1.1. Use insertion sort for small subarrays
+1.2. Stop if already sorted
+1.3. Eliminate the copy to the auxiliary array
+2*. Bottom-up mergesort
+3. Programming Assignment 3: Pattern Recognition (3-1)

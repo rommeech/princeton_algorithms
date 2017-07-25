@@ -7,6 +7,7 @@
 gcc lib/src/shuffle.c -o bin/test/shuffle.o
 */
 
+/*
 int main()
 {
     int i;
@@ -25,6 +26,7 @@ int main()
 
     return 0;
 }
+*/
 
 void shuffle(void **base, size_t n_items)
 {

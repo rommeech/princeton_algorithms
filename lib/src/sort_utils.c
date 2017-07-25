@@ -101,8 +101,8 @@ int cmp_str(char *a, char *b)
     do {
         aa = lc(*(a++));
         bb = lc(*(b++));
-    } while (aa == bb);
-    if (aa == '\0')
+    } while (bb != '\0' && aa == bb);
+    if (aa == '\0' && bb == '\0')
         return 0;
     return aa - bb;
 }
