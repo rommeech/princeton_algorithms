@@ -4,3 +4,5 @@
 1.3. Eliminate the copy to the auxiliary array
 2*. Bottom-up mergesort
 3. Programming Assignment 3: Pattern Recognition (3-1)
+4. Quick sort improvments
+5. Quick selection
