@@ -1,3 +1,4 @@
+0. Unit tests
 1. Merge sort: improvments
 1.1. Use insertion sort for small subarrays
 1.2. Stop if already sorted
@@ -6,4 +7,7 @@
 3. Programming Assignment 3: Pattern Recognition (3-1)
 4. Quick sort improvments
 5. Quick selection
+7. Event-driven simulation
+8. Programming Assignment 4: 8 Puzzle
+
 
