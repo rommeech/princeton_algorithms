@@ -20,11 +20,16 @@ void print_str_array(char **s, size_t n, size_t col_width, size_t col_num)
 
 char ** read_str_array(size_t *n, size_t *max_str_len)
 {
-    size_t l;
-    char **data;
+    size_t l, arr_size = 8;
+    char **data = (char **) malloc(sizeof(char *) * arr_size);
     char *s = (char *) malloc(sizeof(char) * 256);
     *n = 0;
-    while (scanf("%s", s) == 1) {
+    while (scanf("%s", s) == 1)
+    {
+        if (*n >= arr_size) {
+            arr_size *= 2;
+            data = realloc(data, sizeof(char *) * arr_size);
+        }
         l = str_len(s);
         if (*max_str_len < l) *max_str_len = l;
         data[*n] = (char *) malloc(sizeof(char) * l);
